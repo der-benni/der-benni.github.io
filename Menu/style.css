@@ -1,0 +1,45 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+p {
+	display: none;
+	margin: 5px;
+	border-radius: 5px;
+}
+
+.header:hover h3 {
+	border-bottom: 1px solid white;
+	text-decoration: underline;
+}
+
+.header {
+	position: absolute;
+	left: 10%;
+	top: 10%;
+	width: 20%;
+	background-color: #696969;
+	text-align: center;
+	color: white;
+	border-radius: 5px;
+}
+
+.header:hover p {
+	display: block;
+}
+
+.item {
+	text-decoration: none;
+	color: white;
+}
+
+p:hover {
+	background-color: lightgray;
+}
+
+p:hover a {
+	color: black;
+	text-decoration: underline;
+}
