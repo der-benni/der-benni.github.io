@@ -1,2 +1,0 @@
-<h2>HALLO</h2>
-<p>Das ist ein Test</p>
