@@ -1,7 +1,0 @@
-<div>
-	<p class="date">01</p>
-	<p class="date"">Apr</p>
-</div>
-<h2>Erster Blog Eintrag</h2>
-<p class="blogText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim arcu purus, id ornare quam posuere eu. In in commodo mauris. In lacinia in metus quis viverra. Fusce semper, dui quis consequat bibendum, mauris turpis congue dui, eu commodo ipsum lacus sed tellus. Aenean commodo efficitur massa, in varius ex finibus nec. Sed fermentum vel urna ac tincidunt. Nullam at scelerisque mauris. Quisque blandit pretium vestibulum. Integer sed sem nisl. Suspendisse non augue vulputate, varius erat placerat, gravida quam. Phasellus rutrum mollis ante sed ornare.</p>
-<p class="blogText">Suspendisse a lorem vel felis elementum mattis. Ut interdum eros sit amet metus fringilla imperdiet. Donec ac ante in ipsum pulvinar volutpat. Duis mauris enim, consectetur at neque ornare, suscipit blandit urna. Nulla vel massa sit amet quam rutrum ultricies. Morbi eget ante sit amet purus porttitor semper. Curabitur dapibus semper tellus, nec pharetra risus pulvinar in. Sed auctor, magna eget placerat vestibulum, leo leo lacinia nibh, in vestibulum odio justo vitae neque. Morbi diam eros, ultrices eu tempor non, elementum id quam.</p>
