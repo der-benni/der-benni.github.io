@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700'
+rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Bergeskl&auml;nge</title>
+    <script type="text/javascript">
+		
+		function menu() {
+			var x = document.getElementById("item_block");
+      if (x.className === "nav_items") {
+        x.className += " nav_open";
+      } else {
+        x.className = "nav_items";
+      }
+		}
+
+    function openHome() { 
+      window.open("", "_self"); 
+    }
+
+    function openInstagram() { 
+      window.open("https://www.instagram.com/blaskapelle_witzmannsberg/", "_blank"); 
+    }
+
+    function openFacebook() { 
+      window.open("https://www.facebook.com/JugendblaskapelleBergesklaengeWitzmannsberg/", "_blank"); 
+    }
+
+    function createMail() {
+      window.location.href = "mailto:mail@example.org";
+    }
+		
+		function copyToCB (str) {
+		   // Create new element
+		   var el = document.createElement('textarea');
+		   // Set value (string to be copied)
+		   el.value = str;
+		   // Set non-editable to avoid focus and move outside of view
+		   el.setAttribute('readonly', '');
+		   el.style = {position: 'absolute', left: '-9999px'};
+		   document.body.appendChild(el);
+		   // Select text inside element
+		   el.select();
+		   // Copy text to clipboard
+		   document.execCommand('copy');
+		   // Remove temporary element
+		   document.body.removeChild(el);
+		}
+		
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="nav_me" onclick="openHome();">
+        <img title="Bergeskl&auml;nge" src="/favicon.png" alt="">
+        <div class="back_home">
+          BERGESKL&Auml;NGE
+        </div>
+        <div class="hamburger" id="hamburger" onclick="menu();">
+          &#9776;
+        </div>
+      </div>
+      <div class="nav_items" id="item_block">
+        <div class="nav_item">
+          <i class="fa fa-home"></i> Startseite
+        </div>
+        <div class="nav_item">
+          <i class="fa fa-calendar"></i> Termine
+        </div>
+        <div class="nav_item">
+          <i class="fa fa-photo"></i> Galerie
+		    </div>
+		    <div class="nav_item">
+			    <i class="fa fa-user"></i> Kontakt
+			  </div>
+        <div title="Instagram" class="nav_item" onclick="openInstagram();">
+          <i class="fa fa-instagram"></i>
+		    </div>
+		    <div title="Facebook" class="nav_item" onclick="openFacebook();">
+			    <i class="fa fa-facebook"></i>
+		    </div>
+        <div title="E-Mail Adresse kopieren" class="nav_item" onclick="createMail();">
+          <i class="fa fa-envelope"></i>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="test">
+        <img title="Bergeskl&auml;nge" src="/irdning.jpeg" alt="">
+      </div>
+    </main>
+  </body>
+</html>
