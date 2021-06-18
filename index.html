@@ -142,6 +142,36 @@
     resize: none;
   }
   </style>
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Aug 28, 2021 00:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Output the result in an element with id="demo"
+      document.getElementById("vacationTimer").innerHTML = days + "d " + hours + "h "
+              + minutes + "m " + seconds + "s ";
+
+      // If the count down is over, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("vacationTimer").innerHTML = "ABFAHRT!!!";
+      }
+    }, 1000);
+  </script>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
@@ -159,7 +189,6 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">STARTSEITE</a></li>
 		<li><a href="beerpong.html">BEERPONG</a></li>
-        <li><a href="christmas.html">🎁 WEIHNACHTSSPECIAL 🎄</a></li>
       </ul>
     </div>
   </div>
@@ -210,14 +239,9 @@
 
 <!-- Container (The Band Section) -->
 <div id="huette" class="text-center message">
-  <h3>Die HUETTE</h3>
-  <p><em>We love to entertain you!</em></p>
-  <p>Moin meine lieben Freunde und Freundinnen, werte Party-People,
-	  ich möchte mich heute mit einem ganz besonderen Gruß an Euch alle wenden. Die letzten Monate hat man sich ja leider nur bedingt treffen können und die guten alten Hütten-Feiern mussten ebenfalls eingestellt werden. Nichtsdestotrotz haben wir das Beste draus gemacht und waren sogar zusammen im ersten Hütten-Urlaub! Danke für jeden einzelnen, der hier dabei war. Die Tage waren mega! Sobald es die Situation wieder zulässt, wird es hierfür einen zweiten Teil geben, bei dem wir dann hoffentlich jeden mitnehmen können. Ihr dürft euch hierfür gerne Gedanken machen, wo es hingehen soll und was wir dort so treiben. Seid kreativ!</br>
-	  Allgemein will ich euch für all die bisherigen Jahre danken, in denen wir die wildesten Feiern gestartet und den größten Unfug getrieben haben. Jeder einzelne von euch trägt dazu bei, dass das so bleibt und wir ne super Gemeinschaft bilden. Um ein mal ein Paar der Highlights Revue passieren zu lassen, gibt's <a href="christmas.html">hier</a> ein exklusives Special-Video für Euch! Viel Spaß dabei! Außerdem werdet ihr hier auf Dauer die neuen BeerPong regeln finden, um überall und jederzeit darauf zugreifen zu können.
-	  Ich hoffe, dass inzwischen jeder sein kleines Geschenk gefunden hat. (Moe, Du bekommst dein's auch noch, versprochen!). An dieser Stelle besonderer Dank an Leo, für all die Vorbereitungen und deine Zeit, Dankeschööön! Und vielen Dank an Melli für's Helfen beim Austeilen! Frohe Weihnachten euch allen, genießt das gute Essen, die gute Laune und habt Spaß! Bleibt mir gesund und bis bald, Benni.</p>
+  <h3>Countdown bis zum Hüttenurlaub</h3>
+  <h2 id="vacationTimer"></h2>
   <br>
-  <a href="christmas.html" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Zum Video &#10140;</a>
 </div>
 <br>
 <!-- Footer -->
